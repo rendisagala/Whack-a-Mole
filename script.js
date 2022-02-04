@@ -42,7 +42,7 @@ function start() {
   score = 0;
   scoreBoard.textContent = 0;
 
-  ("./audio/finish sound.mp3");
+  ("./audio/finish-sound.mp3");
   moleShow();
   setTimeout(() => {
     finish = true;
