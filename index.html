@@ -7,6 +7,11 @@
     <title>Whack A Mole By RAS</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" href="#" />
+    <script>
+      window.onload = function () {
+        var context = new AudioContext();
+      };
+    </script>
   </head>
   <body>
     <div class="content">
@@ -60,18 +65,13 @@
         type="video/mp4"
       />
     </video>
-    <audio
-      type="audio/ogg"
-      autoplay
-      loop
-      id="audio"
-      src="./docs/audio/full-sound.mp3"
-    ></audio>
-    <audio
-      src="./docs/audio/finish-sound.mp3"
-      type="audio/mpeg"
-      id="finishSound"
-    >
+
+    <audio autoplay loop id="playAudio">
+      <source src="./docs/audio/full-sound.mp3" type="audio/mpeg" />
+      If you can read this, your browser does not support the audio element
+    </audio>
+    <audio id="finishSound">
+      <source src="./docs/audio/finish-sound.mp3" type="audio/mpeg" />
       If you can read this, your browser does not support the audio element
     </audio>
     <script src="./script.js"></script>

@@ -4,7 +4,9 @@ const moleShowed = document.querySelector(".show");
 const scoreBoard = document.querySelector("#scoreBoard");
 const container = document.querySelector(".container");
 const finishSound = document.querySelector("#finishSound");
-const sound = document.querySelector("#sound");
+const audio = document.querySelector("#playAudio");
+
+audio.play();
 
 let previousHole;
 let finish; //default
